@@ -11,7 +11,11 @@ This guide outlines the steps required to set up the environment, execute the CU
 - Download the generated profiling report files to your local machine and open them in the **NVIDIA Nsight Compute** GUI to inspect the results.
 
 ## Problem 2
-
+- Open `Q2.ipynb` in Google Colab and switch the runtime to a T4 GPU.
+- Run the first two cells to write, compile, and run the CUDA code.
+- If you want to test other matrix sizes, just change the `M`, `N`, and `K` values in the code and run those two cells again.
+- Run the `ncu` cell to profile the kernels with NVIDIA Nsight Compute.
+- Run the last cell to benchmark multiple matrix sizes and plot the runtime comparison chart.
 ## Problem 3
 
 - Copy the 5 new files into the llama2 repository, and make sure the folder has the "stories15M.bin" data.
