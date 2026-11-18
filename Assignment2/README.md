@@ -14,6 +14,22 @@ This guide outlines the steps required to set up the environment, execute the CU
 
 ## Problem 3
 
+- Copy the 5 new files into the llama2 repository, and make sure the folder has the "stories15M.bin" data.
+
+- Naive version: \
+files: run_gpu.c , matmul_gpu.cu \
+Running: \
+	`make run_gpu` \
+	`./run_gpu stories15M.bin -t 0`
+
+
+- Optimizied version: \
+files: run_gpu_opt.c , matmul_gpu_opt.cu \
+Running: \
+	`make run_gpu_opt` \
+	`./run_gpu_opt stories15M.bin -t 0` \
+
+
 ## Bonus
 
 - Open Google Colab with an **NVIDIA T4 GPU** runtime and copy the provided notebook cells into your environment.
